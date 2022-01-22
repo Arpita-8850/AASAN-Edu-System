@@ -114,14 +114,8 @@
                 echo '<a href="payment.php" target="_blank"><input type="button" name="payment" value="PAYMENT";/></a>';
             }
         ?> 
-       <input type="button" id="cancel" style=" margin-left: 200px;" name="cancel" value="CANCEL" onClick="window.location='login.php';"/>
+       <input type="button" id="cancel" style=" margin-left: 200px;" name="cancel" value="CANCEL" onClick="window.location='student-choose.php';"/>
        <br><br><br><br>
     </center>
-
-    <script>
-        AOS.init({
-        duration: 1500,
-        })
-    </script>
 </body>
 </html>

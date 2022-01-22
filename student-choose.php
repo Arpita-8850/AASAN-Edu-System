@@ -42,7 +42,7 @@
                 <a href="fetching.php">Leaving Certificate</a>
                 <a href="train-data.php">Train Concession</a>
                 <a href="#">Bonafide Certificate</a>
-                <a href="#">Migration Certificate</a>
+                <a href="migration.php" target="_blank">Migration Certificate</a>
                 <a href="#">Fee Reciept</a>
             </div>
         </div>

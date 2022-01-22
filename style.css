@@ -186,3 +186,8 @@ input[type=button]:hover {
     font-weight: bold; 
     font-family: 'Source Sans Pro', sans-serif;
   }
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+}

@@ -49,32 +49,25 @@
             <tr>
                 <td> Class</td>
                 <td> 
-                  <input type="radio" id="first" name="class" value="first">
-                  <label for="html">First Class</label>
-                  <input type="radio" id="second" name="class" value="second">
-                  <label for="html">Second Class</label><br>
+                  <input type="radio" id="first" name="class" value="first"> First Class
+                  <input type="radio" id="second" name="class" value="second"> Second Class
+                  <br>
                 </td>
             </tr>
             <tr>
                 <td> Period</td>
                 <td> 
-                  <input type="radio" id="monthly"  name="month" value="monthly">
-                  <label for="html">Monthly</label>
-                  <input type="radio" id="quaterly"  name="month" value="quaterly">
-                  <label for="html">Quaterly</label><br>
+                  <input type="radio" id="monthly"  name="month" value="monthly"> Monthly
+                  <input type="radio" id="quaterly"  name="month" value="quaterly"> Quaterly
+                 <br>
                 </td>
             </tr>
         </table>
 
         <br>
-       <input type="button" id="cancel" style=" margin-left: 200px;" name="cancel" value="CANCEL" onClick="window.location='login.php';"/>
+        <a href="tc.php"><input type="button" name="submit" value="SUBMIT";/></a>
+       <input type="button" id="cancel" style=" margin-left: 200px;" name="cancel" value="CANCEL" onClick="window.location='student-choose.php';"/>
        <br><br><br><br>
     </center>
-
-    <script>
-        AOS.init({
-        duration: 1500,
-        })
-    </script>
 </body>
 </html>
