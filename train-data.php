@@ -23,7 +23,6 @@
 		
         $studentDetails = mysqli_fetch_assoc($selectResult);  
         $sName = $studentDetails["name"];
-
         $_SESSION['sId'] = $sId;
     ?>
 
@@ -34,20 +33,48 @@
         <a href="login.php" class='logout'>LOGOUT</a>
     </div>
     
-    <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> 
+    <br><br> <br><br> <br><br>
     <center>
-        <div class="dropdown">
-            <button class="dropbtn">Choose Your Document</button>
-            <div class="dropdown-content">
-                <a href="fetching.php">Leaving Certificate</a>
-                <a href="train-data.php">Train Concession</a>
-                <a href="#">Bonafide Certificate</a>
-                <a href="#">Migration Certificate</a>
-                <a href="#">Fee Reciept</a>
-            </div>
-        </div>
+        <?php
+			$conn = mysqli_connect("localhost", "root", "", "lc") or die(mysqli_error($conn));
+            $_SESSION['sId'] = $sId;
+            $query = "SELECT * FROM students WHERE sr='$sId' ";
+            $query_run = mysqli_query($conn,$query);					
+            $row = mysqli_fetch_assoc($query_run);		 
+		?>
+        
+        <h1> Train Concession</h1>
+        <br><br>
+        <table class="table" style="width: 50%;  font-size: 23px;">	
+            <tr>
+                <td> Class</td>
+                <td> 
+                  <input type="radio" id="first" name="class" value="first">
+                  <label for="html">First Class</label>
+                  <input type="radio" id="second" name="class" value="second">
+                  <label for="html">Second Class</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td> Period</td>
+                <td> 
+                  <input type="radio" id="monthly"  name="month" value="monthly">
+                  <label for="html">Monthly</label>
+                  <input type="radio" id="quaterly"  name="month" value="quaterly">
+                  <label for="html">Quaterly</label><br>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+       <input type="button" id="cancel" style=" margin-left: 200px;" name="cancel" value="CANCEL" onClick="window.location='login.php';"/>
+       <br><br><br><br>
     </center>
-    
-   
+
+    <script>
+        AOS.init({
+        duration: 1500,
+        })
+    </script>
 </body>
 </html>

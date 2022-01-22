@@ -23,6 +23,7 @@
 		
         $studentDetails = mysqli_fetch_assoc($selectResult);  
         $sName = $studentDetails["name"];
+        $_SESSION['sId'] = $sId;
     ?>
 
     <div class="ExamPortal">AASAN Edu System</div>
@@ -41,6 +42,9 @@
             $query_run = mysqli_query($conn,$query);					
             $row = mysqli_fetch_assoc($query_run);		 
 		?>
+        
+        <h1> Leaving Certificate</h1>
+        <br><br>
         
         <table class="table table-hover table-striped"  style="width: 80%;  font-size: 23px;">	
             <thead style="background-color: #2765C1; color: white; font-size: 26px; ">
@@ -101,7 +105,7 @@
                 } 
                 else 
                 {
-                echo '<a href="lc.php"><input type="button" name="submit" value="SUBMIT";/></a>';                        
+                echo '<a href="lc.php" target="_blank"><input type="button" name="submit" value="SUBMIT";/></a>';                        
                 }
             } 
             else 

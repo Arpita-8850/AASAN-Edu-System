@@ -2,6 +2,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+    body{
+        margin: 100px;
+    }
     #gpm {
         position: relative;
     }
@@ -10,7 +13,7 @@
         height: 150px;
         position: absolute;
         top: -29px;
-        right: 1300px;
+        right: 1200px;
     }
             
     h1 {
@@ -30,7 +33,7 @@
         position: relative;
     }
     #paytm img {
-        width: 260px;
+        width: 360px;
         height: 200px;
         position: absolute;
         top: 25px;
@@ -41,50 +44,38 @@
         position: relative;
     }
     #upi img {
-        width: 180px;
-        height: 80px;
+        width: 280px;
+        height: 180px;
         position: absolute;
         top: 40px;
-        right: 310px; 
+        right: 620px; 
     }	
             
     #google {
         position: relative;
     } 
     #google img {
-        height:120px;
-        width: 120px;
+        height:220px;
+        width: 220px;
         position: absolute;
         top: 30px;
-        right:110px;
+        right:210px;
     }	
         
     #pay {
         position: relative;
     }
     #pay img {
-        width: 240x;
+        width: 240px;
         height: 240px;
         position: absolute;
-        top: -250px;
-        right: 280px;
+        right: 620px;
     }
             
     h3 {
         color: red;
         font-size: 30px;
-    }
-        
-    .cancel {
-        position: absolute;
-        background-color : red;
-        color: white;
-        font-size: 19px;
-        border-radius: 4px;
-        border-color: red;
-        top: 1320px;
-        padding: 17px 27px;
-    }       
+    }      
 </style>
 <body>
     <div id="gpm"><img src="gpm.png"/></div>
@@ -103,26 +94,28 @@
     </div>
     <div id="google"> 
         <img src="google.png"/>
-    </div>	
-    <br>
-    <div id="pay"><img src="pay.png"/></div>
-    <h3 style="margin-top: 405px"><font face="calibri"><center><strong> QR CODE for paytm</strong><center></h3>
-    <br>
-    <h3><font face="calibri"><strong>Online Payment Details:</strong></h3>
-    <p class="normal" style="margin-top: 30px"><font face="calibri">Account Name: GPM</p>
-    <p class="normal" style="margin-top: 35px"><font face="calibri">Mobile number: +91  9860412268</p>
-    <p class="normal" style="margin-top: 40px"><font face="calibri">Bank Account No. / UPI ID: 3704 0044 0532 0130</p>
-    <p class="normal" style="margin-top: 45px"><font face="calibri">IFSC Code:  SBIN0005943</p>
-    <br>
-    <h3><font face="calibri"><strong>Demand Draft:</strong></h3>
-    <p class="normal"><font face="calibri">Name: Principle Government Polytechnic Mumbai</p>
-    <br>
-    <h3><font face="calibri"><strong>Cash Payment:</strong></h3>
-    <p class="normal"><font face="calibri">Contact to the faculty of respective departments.</p>
-    <br></br>
-    <br>
-    <div style="margin-right:800px;" > 
-        <input  id="cancelbutton" type="button" name="cancel" value="BACK" class="cancel" onClick="window.location='choose.php';"/>  
     </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="pay"><img src="pay.png"/></div>
+    <h3 style="margin-top: 250px;"><font face="calibri"><center><strong> QR CODE for paytm</strong></center></h3>
+    <br>
+
+    <div style="margin-left: 20px;">
+        <h3><font face="calibri"><strong>Online Payment Details:</strong></h3>
+        <p><font face="calibri">Account Name: GPM</p>
+        <p><font face="calibri">Mobile number: +91  9860412268</p>
+        <p><font face="calibri">Bank Account No. / UPI ID: 3704 0044 0532 0130</p>
+        <p><font face="calibri">IFSC Code:  SBIN0005943</p>
+        <br>
+        
+        <h3><font face="calibri"><strong>Demand Draft:</strong></h3>
+        <p class="normal"><font face="calibri">Name: Principle Government Polytechnic Mumbai</p>
+        <br>
+        
+        <h3><font face="calibri"><strong>Cash Payment:</strong></h3>
+        <p class="normal"><font face="calibri">Contact to the faculty of respective departments.</p>
+    </div>
+    <br><br>
 </body>
 </html>
