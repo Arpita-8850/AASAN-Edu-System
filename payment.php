@@ -1,6 +1,7 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
 <style>
     body{
         margin: 100px;
@@ -116,6 +117,9 @@
         <h3><font face="calibri"><strong>Cash Payment:</strong></h3>
         <p class="normal"><font face="calibri">Contact to the faculty of respective departments.</p>
     </div>
+    <center>
+        <input type="button" id="cancel" name="cancel" value="BACK" onClick="window.location='student-choose.php';"/>
+    </center>
     <br><br>
 </body>
 </html>

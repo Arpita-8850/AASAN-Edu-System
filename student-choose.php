@@ -34,7 +34,7 @@
         <a href="login.php" class='logout'>LOGOUT</a>
     </div>
     
-    <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> 
+    <br><br> <br><br> <br><br> <br><br> <br><br>
     <center>
         <div class="dropdown">
             <button class="dropbtn">Choose Your Document</button>

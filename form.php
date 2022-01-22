@@ -99,7 +99,7 @@
                     </tr>
                 </table>
                 <br><br>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit"  onclick="popup()">
                 <input type="reset" value="Clear Form" onclick="clearFunc()" id="res" class="btn"/>
             </form>
         </center>  
@@ -108,6 +108,10 @@
     <br><br>
 
     <script>
+    function popup()
+    {
+        confirm("Are you sure to proceed for payment?");
+    }
 	function clearFunc()
 	{
 		document.getElementById("fname").value="";
