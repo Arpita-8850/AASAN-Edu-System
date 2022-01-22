@@ -34,21 +34,24 @@
         <a href="login.php" class='logout'>LOGOUT</a>
     </div>
     
-    <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> 
+    <br><br> <br><br> <br>
     <center>
-        <div class="dropdown">
-            <button class="dropbtn">Choose Your Document</button>
-            <div class="dropdown-content">
-                <a href="fetching.php">Leaving Certificate</a>
-                <a href="train-data.php">Train Concession</a>
-                <a href="reason.php">Bonafide Certificate</a>
-                <a href="migration.php" target="_blank">Migration Certificate</a>
-                <a href="#">Fee Reciept</a>
-                <a href="form.php">Courier Request</a>
-            </div>
-        </div>
-    </center>
+    <p style="font-size:30px; margin-top:150px;">Reason for bonafide Certificate</p>
+	<form action="bonafide.php" >
+        <select required name="reason" id="r" style="font-size:25px; margin-top:5px;">
+            <option value="" disabled selected hidden>Please Choose...</option>
+            <option value="reason" name="reason">Bus Concession</option>
+            <option value="reason" name="reason">Income Certificate</option>
+            <option value="reason" name="reason">Industrial visit for project work</option>
+            <option value="reason" name="reason">Educational loans</option>
+            <option value="reason" name="reason">Visa Applications</option>
+        </select>							
+	</form>
     
-   
+    <br><br> <br><br><br> <br><br><br>
+    <a href="bonafide.php" target="_blank"><input type="button" name="submit" value="SUBMIT"></a>
+    <input type="button" id="cancel" style=" margin-left: 200px;" name="cancel" value="CANCEL" onClick="window.location='student-choose.php';"/>
+    <br><br><br><br>
+    </center>
 </body>
 </html>

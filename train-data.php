@@ -45,29 +45,38 @@
         
         <h1> Train Concession</h1>
         <br><br>
-        <table class="table" style="width: 50%;  font-size: 23px;">	
-            <tr>
-                <td> Class</td>
-                <td> 
-                  <input type="radio" id="first" name="class" value="first"> First Class
-                  <input type="radio" id="second" name="class" value="second"> Second Class
-                  <br>
-                </td>
-            </tr>
-            <tr>
-                <td> Period</td>
-                <td> 
-                  <input type="radio" id="monthly"  name="month" value="monthly"> Monthly
-                  <input type="radio" id="quaterly"  name="month" value="quaterly"> Quaterly
-                 <br>
-                </td>
-            </tr>
-        </table>
+        <form method = "POST"> 
+            <table class="table" style="width: 50%;  font-size: 23px;">	
+                <tr>
+                    <td> Class</td>
+                    <td> 
+                    <input type="radio" id="first" name="class" value="first"> First Class
+                      <input type="radio" id="second" name="class" value="second"> Second Class
+                    <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Period</td>
+                    <td> 
+                    <input type="radio" id="monthly"  name="month" value="monthly"> Monthly
+                      <input type="radio" id="quaterly"  name="month" value="quaterly"> Quaterly
+                     <br>
+                    </td>
+                </tr>
+            </table>
 
-        <br>
-        <a href="tc.php"><input type="button" name="submit" value="SUBMIT";/></a>
-       <input type="button" id="cancel" style=" margin-left: 200px;" name="cancel" value="CANCEL" onClick="window.location='student-choose.php';"/>
-       <br><br><br><br>
+            <br><br>
+            <!-- <button name="submit" id="submit" type="submit" onclick="displayanswer()">SUBMIT</button>
+            <div id="result"></div> -->
+
+            <input type="button" name="submit" value="SUBMIT" onclick="displayanswer()">
+            <input type="button" id="cancel" style=" margin-left: 200px;" name="cancel" value="CANCEL" onClick="window.location='student-choose.php';"/>
+            <br><br><br><br>
+        </form>
     </center>
+
+<script>
+
+</script>
 </body>
 </html>
