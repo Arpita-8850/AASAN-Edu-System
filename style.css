@@ -1,0 +1,188 @@
+body {
+    position: relative;
+    background: #FFFFFF;
+    }
+    
+.ExamPortal { 
+    position: absolute;
+    width: 474px;
+    height: 45px;
+    left: 102px;
+    top: 15px;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 46px;
+    line-height: 56px;
+    color: #2765C1;
+}
+        
+.Frame1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    left: 600px;
+    top: 42px;
+}
+
+.Frame1 .name{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 38px;
+    color: black;
+    text-decoration: none;
+    flex: none;
+    margin-top: -6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.4s all;
+}
+
+
+.Frame1 .logout  {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 38px;
+    color: white;
+    text-decoration: none;
+    flex: none;
+    margin-top: -6px;
+    background-color: #2765C1;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    border-radius: 12px;
+    transition: 0.4s all;
+    margin-left: 100px;
+}
+
+input[type=submit] {
+    background-color: #1d7a22;
+    width: 100px;
+    height: 50px;
+    border: 1px solid white;
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #21a328;
+}
+
+#cancel {
+    background-color: rgb(187, 17, 17);
+}
+
+#cancel:hover {
+    background-color: #1d7a22;
+}
+
+#icon {
+    height: 45px;
+    width: 45px;
+    transition: transform .2s;
+}
+
+#icon:hover {
+    transform: scale(1.2); 
+}
+
+#test {
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    color: black;
+    text-decoration: none;
+    flex: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+input[type=button] {
+    background-color: #026ead;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #1d7a22;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }  
+
+.dropbtn {
+  background-color: #2765C1;
+  color: white;
+  padding: 20px 90px 20px 90px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 38px;
+  text-decoration: none;
+  flex: none;
+  text-align: center;
+  border-radius: 12px;
+  transition: 0.4s all;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 420px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 22px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 30px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    font-style: normal;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#note {
+    font-size: 35px;
+    font-weight: bold; 
+    font-family: 'Source Sans Pro', sans-serif;
+  }
