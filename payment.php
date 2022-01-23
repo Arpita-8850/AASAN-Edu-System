@@ -117,9 +117,6 @@
         <h3><font face="calibri"><strong>Cash Payment:</strong></h3>
         <p class="normal"><font face="calibri">Contact to the faculty of respective departments.</p>
     </div>
-    <center>
-        <input type="button" id="cancel" name="cancel" value="BACK" onClick="window.location='student-choose.php';"/>
-    </center>
     <br><br>
 </body>
 </html>

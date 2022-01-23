@@ -37,8 +37,7 @@
                 <input type="file" name="image" class="form-control">               
                 <br><br><br><br>
                 <input type="submit" name="upload" value="UPLOAD">
-                <input type="button" style="margin-left: 200px;" id="cancel" name="payment" value="PAY FEES" onClick="window.location='payment.php';"/>
-            </form>
+                '<a href="payment.php" target="_blank"><input type="button" style="margin-left: 200px;" name="payment" value="PAYMENT";/></a>            </form>
         </center>
     </div>
     <?php
